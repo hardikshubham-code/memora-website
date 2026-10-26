@@ -174,7 +174,7 @@ export default function Privacy() {
             <h2 id="contact">13. Contact us</h2>
             <p>Questions or requests about this policy can be sent to:</p>
             <p><span className="fill">91social Software Private Limited</span><br />
-              Email: <a href="mailto:support@memoramemora.com">support@example.com</a><br />
+              Email: <a href="mailto:support@memoramemora.com">support@memoramemora.com</a><br />
               #1470, 3rd Floor, 13th Cross, 19th Main Road,<br />
               Sector 1, HSR Layout, Bangalore - 560102.</p>
           </article>
