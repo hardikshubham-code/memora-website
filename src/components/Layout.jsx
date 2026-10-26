@@ -29,14 +29,18 @@ function Footer({ current }) {
     <footer className="site-footer">
       <div className="wrap">
         <div>
-          <img className="logo" src="assets/logo.svg" alt="Memora" width="142" height="40" />
+          {/* No background box here, unlike the header logo: plum wordmark on light, white on dark. */}
+          <picture>
+            <source srcSet="assets/logo-footer-dark.svg" media="(prefers-color-scheme: dark)" />
+            <img className="logo" src="assets/logo-footer.svg" alt="Memora" width="142" height="40" />
+          </picture>
           <small>© 2026 Memora. Google Drive is a trademark of Google LLC. Memora is not affiliated with Google.</small>
         </div>
         <nav aria-label="Footer">
           {!isHome && <a href="index.html">Home</a>}
           <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html">Terms of Service</a>
-          {isHome && <a href="mailto:support@example.com">Contact</a>}
+          {isHome && <a href="mailto:support@memoramemora.com">Contact</a>}
         </nav>
       </div>
     </footer>
